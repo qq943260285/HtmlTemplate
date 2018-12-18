@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+<div class="app">
+    <div class="app-left">
+        <div class='app-left-top'>
+            <div class='logo-div'>
+                logo
+            </div>
+        </div>
+        <div class='app-left-bottom'>
+            <ul class="app-left-menu" id="app-menu">
+                <!--<li class='menu-li'>-->
+                <!--<div class="status"></div>-->
+                <!--<div class="menu-img"></div>-->
+                <!--<div class='menu-txt'>首页</div>-->
+                <!--</li>-->
+                <!--<li class='menu-status-select'>-->
+                <!--<div class="menu-status"></div>-->
+                <!--<div class="menu-img"></div>-->
+                <!--<div class='menu-txt'>基准值</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<div class="menu-status "></div>-->
+                <!--<div class="menu-img"></div>-->
+                <!--<div class='menu-txt'>我的项目</div>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+    <div class="app-right">
+        <div class='app-right-top'>
+            <div class='app-right-top-user'>
+                用户：小宇专属
+            </div>
+        </div>
+        <div class="app-right-bottom">
+            <div class='app-right-bottom-summary'>
+                <div class='summary-title'>
+                    <div class='summary-title-txt'>检查项</div>
+                    <div class='summary-title-select'>
+                        <select>
+                            <option>选择项一</option>
+                            <option>选择项二</option>
+                            <option>选择项三</option>
+                        </select>
+                    </div>
+                </div>
+                <div class='summary-panels'>
+                    <div class='summary-panel summary-panel-select'>
+                        <div class='summary-panel-title'>
+                            日检项目
+                        </div>
+                        <div class='summary-panel-div'>
+
+                            <div class='summary-panel-div-left'>
+                                <div class='panel-div-is-pass-title'>通过</div>
+                                <div class='panel-div-pass'>66</div>
+                            </div>
+                            <div class='summary-panel-div-right'>
+                                <div class='panel-div-is-pass-title'>未通过</div>
+                                <div class='panel-div-no-pass'>44</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='summary-panel'>
+                        <div class='summary-panel-title'>
+                            月检项目
+                        </div>
+                        <div class='summary-panel-div'>
+                            <div class='summary-panel-div-left'>
+                                <div class='panel-div-is-pass-title'>通过</div>
+                                <div class='panel-div-pass'>66</div>
+                            </div>
+                            <div class='summary-panel-div-right'>
+                                <div class='panel-div-is-pass-title'>未通过</div>
+                                <div class='panel-div-no-pass'>44</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='summary-panel'>
+                        <div class='summary-panel-title'>
+                            年检项目
+                        </div>
+                        <div class='summary-panel-div'>
+
+                            <div class='summary-panel-div-left'>
+                                <div class='panel-div-is-pass-title'>通过</div>
+                                <div class='panel-div-pass'>66</div>
+                            </div>
+                            <div class='summary-panel-div-right'>
+                                <div class='panel-div-is-pass-title'>未通过</div>
+                                <div class='panel-div-no-pass'>44</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='app-right-bottom-operating'>
+                <div class='operating-table'>
+                    <div class='table-div'>
+
+                        <div class="table-head">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 80px;"/>
+                                    <col/>
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <td class='tb-1'>项目名称</td>
+                                    <td class='tb-2'>是否通过</td>
+                                    <td class='tb-3'>误差</td>
+                                    <td class='tb-4'>容差</td>
+                                    <td class='tb-5'>更多</td>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="table-body">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 80px;"/>
+                                    <col/>
+                                </colgroup>
+                                <tbody id='tbody'>
+                                <!--<tr class='tr-content-select'>-->
+                                <!--<td class='tb-1'>输出量稳定性</td>-->
+                                <!--<td class='tb-2'>0</td>-->
+                                <!--<td class='tb-3'>1%</td>-->
+                                <!--<td class='tb-4'>3%</td>-->
+                                <!--<td class='tb-5'>8MV</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                <!--<td class='tb-1'>输出量稳定性</td>-->
+                                <!--<td class='tb-2'>0</td>-->
+                                <!--<td class='tb-3'>1%</td>-->
+                                <!--<td class='tb-4'>3%</td>-->
+                                <!--<td class='tb-5'>8MV</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                <!--<td class='tb-1'>输出量稳定性</td>-->
+                                <!--<td class='tb-2'>0</td>-->
+                                <!--<td class='tb-3'>1%</td>-->
+                                <!--<td class='tb-4'>3%</td>-->
+                                <!--<td class='tb-5'>8MV</td>-->
+                                <!--</tr>-->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class='operating-item'>
+                    <div class='operating-tab'>
+                        <div class='operating-tab-button'>
+                            <div class='tab-button tab-button-select'>详情</div>
+                            <div class='tab-button'>历史记录</div>
+                            <div class='tab-button'>趋势分析</div>
+                        </div>
+                        <div class='operating-tab-div'>
+                            <div style='background-color:#f2f2f2;height: 800px '></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

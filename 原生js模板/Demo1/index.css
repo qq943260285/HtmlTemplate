@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body {
+    height: 100%;
+    min-width: 1080px;
+
+}
+
+.app {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.app-left {
+    width: 195px;
+    height: 100%;
+    background-color: #2F353F;
+    float: left;
+    position: fixed;
+    top: 0;
+    overflow: auto;
+}
+
+.app-left-top {
+    height: 112px;
+    border: #2F353F solid 1px;
+}
+
+.logo-div {
+    background-color: #fff;
+    width: 120px;
+    height: 30px;
+    margin: 40px auto;
+}
+
+.app-left-bottom {
+
+}
+
+.app-left-menu li {
+    height: 50px;
+    cursor: pointer;
+}
+
+.menu-status {
+    width: 4px;
+    height: 100%;
+    float: left;
+}
+
+.menu-status-select .menu-status {
+    background-color: #3EC3FE;
+}
+
+.menu-status-select {
+    background-color: #272C35;
+}
+
+.menu-img {
+    float: left;
+    background-color: #fff;
+    height: 20px;
+    width: 20px;
+    margin: 15px 20px;
+}
+
+.menu-txt {
+    float: left;
+    margin: 15px 0;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(255, 249, 249, 1);
+}
+
+.app-right {
+    background-color: #fff;
+    float: left;
+    width: calc(100% - 195px);
+    min-width: calc(1080px - 195px);
+    height: 100%;
+    position: absolute;
+    left: 195px;
+    top: 0;
+    bottom: 0;
+}
+
+.app-right-top {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+    height: 50px;
+    width: 100%;
+    float: left;
+    position: sticky;
+}
+
+.app-right-top-user {
+    height: 20px;
+    margin-right: 100px;
+    margin-top: 13px;
+    float: right;
+
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+}
+
+.app-right-bottom {
+    background-color: #eff4fe;
+    width: 100%;
+    height: calc(100% - 50px);
+    float: left;
+
+}
+
+.app-right-bottom-summary {
+    height: 120px;
+    margin: 30px;
+}
+
+.summary-title {
+
+}
+
+.summary-title-txt {
+    float: left;
+    height: 25px;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 0 25px 0 6px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(49, 49, 49, 1);
+    border-left: 4px #64C6FF solid;
+}
+
+.summary-title-select {
+    float: left;
+    height: 25px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(229, 229, 229, 1);
+    opacity: 1;
+    border-radius: 2px;
+}
+
+.summary-title-select select {
+    width: 180px;
+}
+
+.summary-panels {
+    width: 100%;
+    float: left;
+}
+
+.summary-panel {
+    cursor: pointer;
+    float: left;
+    width: 29%;
+    background-color: #fff;
+    height: 85px;
+    margin: 10px 2%;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16);
+}
+
+.summary-panel-select {
+    border: 1px solid rgba(97, 216, 246, 1)
+}
+
+.summary-panel-title {
+    height: 20px;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 10px 15px;
+    color: rgba(167, 167, 167, 1);
+}
+
+.summary-panel-div {
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+}
+
+.summary-panel-div-left {
+    float: left;
+    padding-left: 10px;
+    width: 45%;
+}
+
+.summary-panel-div-right {
+    float: right;
+    width: 45%;
+
+}
+
+.panel-div-is-pass-title {
+    float: left;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(103, 103, 103, 1);
+    margin: 8px 20% 8px 10px;
+}
+
+.panel-div-no-pass {
+    float: left;
+    font-size: 20px;
+    line-height: 26px;
+    color: rgba(255, 165, 165, 1);
+    margin: 5px 0;
+}
+
+.panel-div-pass {
+    float: left;
+    font-size: 20px;
+    line-height: 26px;
+    color: rgba(147, 255, 169, 1);
+    margin: 5px 0;
+}
+
+.app-right-bottom-operating {
+    margin: 0 30px 30px 30px;
+    height: calc(100% - 210px);
+}
+
+.operating-table {
+    height: 100%;
+    background-color: #fff;
+    width: 38%;
+    margin-right: 2%;
+    float: left;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16);
+    /*overflow: auto;*/
+}
+
+.operating-item {
+    float: left;
+    height: 100%;
+    background-color: #fff;
+    width: 60%;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16);
+}
+
+.table-div {
+    margin: 10px;
+    height: 100%;
+}
+
+.table-head {
+    padding-right: 17px;
+    color: #000;
+}
+
+.table-body {
+    width: 100%;
+    /*height: 300px;*/
+    height: calc(100% - 52px);
+    overflow-y: auto;
+}
+
+.table-head table, .table-body table {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr td {
+    border-bottom: 1px solid #dedede;
+    text-align: center;
+}
+
+tr {
+    height: 32px;
+}
+.table-body table{
+    cursor: pointer;
+}
+.tr-content-select {
+    background-color: rgba(97, 216, 246, .7)!important;
+}
+.table-body tr:hover{
+    background-color: rgba(97, 216, 246, .2);
+}
+
+.tb-1 {
+    width: 30%;
+}
+
+.tb-2 {
+    width: 15%;
+}
+
+.tb-3 {
+    width: 20%;
+}
+
+.tb-4 {
+    width: 15%;
+}
+
+.operating-tab {
+    margin: 10px;
+    height: 100%;
+}
+
+.operating-tab-button {
+    height: 40px;
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
+
+.tab-button {
+    height: 39px;
+    margin: 0 20px;
+    float: left;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+.tab-button-select {
+    color: rgba(97, 216, 246, 1);
+    border-bottom: 3px solid rgba(97, 216, 246, 1);
+}
+
+.operating-tab-div {
+    overflow: auto;
+    height: calc(100% - 65px);
+    margin-top: 5px;
+
+}
