@@ -1,0 +1,146 @@
+div {
+  border: #00e6e6 1px solid;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.fs-app {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 700px;
+  border: 0;
+}
+.fs-app .tabs {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.fs-app .tabs .tab {
+  float: left;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.fs-app .tabs .tab-select {
+  background-color: #1E88C7;
+}
+.fs-app .content {
+  width: 100%;
+  height: 700px;
+  display: flex;
+}
+@media only screen and (min-width: 1200px) {
+  .fs-app .content .l {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .fs-app .content .l {
+    width: 100%;
+  }
+}
+.fs-app .content .l {
+  display: flex;
+  flex-direction: column;
+  min-width: 700px;
+  max-width: 900px;
+}
+.fs-app .content .l .t {
+  flex: 0 0 500px;
+  display: flex;
+  flex-direction: column;
+}
+.fs-app .content .l .t .tl {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.fs-app .content .l .t .tl .btns {
+  flex: 0 0 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.fs-app .content .l .t .tl .btns .btn {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+.fs-app .content .l .t .tl .list {
+  flex: 1;
+  overflow-y: scroll;
+}
+.fs-app .content .l .t .tl .list ul {
+  list-style: none;
+}
+.fs-app .content .l .t .tl .list li {
+  background-color: #f2f2f2;
+  list-style: none;
+  cursor: pointer;
+  margin: 5px;
+}
+.fs-app .content .l .t .tl .list .li-select {
+  background-color: #f88;
+}
+.fs-app .content .l .t .tr {
+  flex: 1;
+}
+.fs-app .content .l .b {
+  flex: 1;
+  display: flex;
+  overflow-x: scroll;
+}
+.fs-app .content .l .b .i-d {
+  flex: 0 0 150px;
+  cursor: pointer;
+  margin: 3px;
+}
+.fs-app .content .l .b .i-d .dle {
+  width: 20px;
+  height: 20px;
+  float: right;
+  background-color: #00e6e6;
+}
+.fs-app .content .l .b .i-d .img {
+  height: 100%;
+  width: 100%;
+  background-color: #cccccc;
+  border: 0;
+}
+@media only screen and (min-width: 1200px) {
+  .fs-app .content .r {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .fs-app .content .r .c-d {
+    flex: 1;
+  }
+  .fs-app .content .r .t-d {
+    flex: 1;
+  }
+  .fs-app .content .r .t-d table {
+    border-collapse: separate;
+    width: 100%;
+  }
+  .fs-app .content .r .t-d tr {
+    height: 32px;
+  }
+  .fs-app .content .r .t-d td {
+    padding: 4px;
+    border-left: 2px;
+    border-bottom: 1px solid #dedede;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .fs-app .content .r {
+    display: none;
+  }
+}
